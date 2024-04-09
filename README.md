@@ -1,33 +1,11 @@
 ------------------------------------------------------------------------
-* Gait demo for Tutorial V1.0                     
-* By Chunfeng Song                                
-* E-mail: chunfeng.song@nlpr.ia.ac.cn                   
+                           
+* E-mail: janvinjoseph@gmail.com                 
 ------------------------------------------------------------------------
- ![img](https://github.com/developfeng/GaitRecognition/blob/master/ToyGaitDemo.gif)
 
-i.    Overview
-ii.   Copying
-iii.  Use
 
-i. OVERVIEW
------------------------------
 
-This gait recognition demo needs clean background, e.g. a white wall. 
-As this demo only takes GEI as its feature, so it can only recognize 
-persons with same views. For example, people walk with the same angle for both 
-registration and recognition.
 
-This code is one part of the Tutorial of ICPR 2016.
-
-ii. COPYING
------------------------------
-We share this code only for research use. We neither warrant correctness 
-nor take any responsibility for the consequences of using this code. 
-If you find any problem or inappropriate content in this code, feel 
-free to contact us.
-
-iii. USE
------------------------------
 This code should work on Windows or Linux, with Python and OpenCV.
 We highly recommend you install Anaconda (python 2.7) and OpenCV2.4:
 
