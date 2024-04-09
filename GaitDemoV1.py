@@ -1,12 +1,4 @@
-"""
-Gait demo for Tutorial V1.0
-Author: Chunfeng Song
-E-mail: developfeng@gmail.com
 
-This gait recognition demo needs clean background, e.g. a white wall. As this demo only takes GEI as its feature, so it can only recognize the same view. For example, people walk with the same angle for both registration and recognition.
-"""
-
-# Make sure you have install the following Python packages, we recommend you to install Anaconda and OpencCV 2.4. This code can work in both Windows and Linux.
 import sys
 import cPickle
 from PyQt4 import QtCore, QtGui, uic
@@ -33,16 +25,12 @@ def unpickle(filename):
 
 class GaitDemo(QtGui.QMainWindow, Ui_MainWindow):
     def __init__(self):
-        '''
-        Set initial parameters here.
-        Note that the demo window size is 1366*768, you can edit this via Qtcreator.
-        In this demo, we take 20 frames of profiles to generate a GEI. You can edit this number by your self.
-        '''
+      
         QtGui.QMainWindow.__init__(self)
         Ui_MainWindow.__init__(self)
         self.showFullScreen()
         self.setupUi(self)
-        self.capture = cv2.VideoCapture(0)# Edit this default num to 1 or 2, if you have multiple cameras.
+        self.capture = cv2.VideoCapture(0)
         self.currentFrame=n.array([])
         self.firstFrame=None
         self.register_state = False
